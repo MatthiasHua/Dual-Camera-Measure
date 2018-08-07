@@ -2,7 +2,7 @@
 # should be one or two
 # one stand for a camera module with two camera
 # two stand for two camera work together
-num_camera = 1
+num_camera = 0
 
 # id of camera
 # for laptop with webcam, it might be 1

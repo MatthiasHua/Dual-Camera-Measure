@@ -5,7 +5,9 @@ $(function () {
   $('#button-start').attr('calibration_count', 1)
   $('#button-start').attr('calibration_status', 0)
   $('#button-start').click(function() {
-
+    $.get("chessboard_calibration", function(result){
+      console.log(result);
+    });
     if ($(this).attr('calibration_status')  == 0) {
       var calibration_count =  $(this).attr('calibration_count') + 1;
       $('#button-start').html('Next');
